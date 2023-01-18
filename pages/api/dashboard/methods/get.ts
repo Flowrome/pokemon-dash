@@ -1,5 +1,5 @@
 import { NextApiRequest } from "next";
-import { objectToQuery } from "../../../utilities/object-to-query";
+import { objectToQuery } from "../../../../utilities/object-to-query";
 
 interface ModelRequestGet {
   q?: string;
@@ -9,8 +9,6 @@ interface ModelRequestGet {
 export interface ModelResponseGet {
   results: {
     name: string;
-    height: number;
-    weight: number;
     id: number;
     sprites: {
       back: string;
@@ -18,7 +16,6 @@ export interface ModelResponseGet {
       front: string;
       frontShiny: string;
     };
-    stats: { base: number; effort: number; name: string }[];
     types: string[];
   }[];
   count: number;
@@ -41,8 +38,6 @@ export const handlerGet = async (
     results.map(async ({ url }) => {
       const {
         name,
-        height,
-        weight,
         id,
         sprites: {
           back_default: back,
@@ -50,13 +45,10 @@ export const handlerGet = async (
           front_default: front,
           front_shiny: frontShiny,
         },
-        stats,
         types,
       } = (await fetch(`${url}`).then((res) => res.json())) as any;
       return {
         name,
-        height,
-        weight,
         id,
         sprites: {
           back,
@@ -64,11 +56,6 @@ export const handlerGet = async (
           front,
           frontShiny,
         },
-        stats: stats.map(({ base, effort, stat: { name } }: any) => ({
-          base,
-          effort,
-          name,
-        })),
         types: types.map(({ type: { name } }: any) => name),
       };
     })
