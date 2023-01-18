@@ -53,15 +53,6 @@ export const handlerGet = async (
         stats,
         types,
       } = (await fetch(`${url}`).then((res) => res.json())) as any;
-      console.log({
-        name,
-        height,
-        weight,
-        id,
-        sprites: { back, backShiny, front, frontShiny },
-        stats,
-        types,
-      });
       return {
         name,
         height,
