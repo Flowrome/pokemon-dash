@@ -13,7 +13,7 @@ export const getServerSideProps = async ({
   req,
 }: GetServerSidePropsContext) => {
   const baseUrl = (req.headers.referer || "").split("/").splice(0, 3).join("/");
-  const data = await fetch(`${baseUrl}/api/dashboard`).then((res) =>
+  const data = await fetch(`${baseUrl || process.env.BASEURL_API}/api/dashboard`).then((res) =>
     res.json()
   );
   return {

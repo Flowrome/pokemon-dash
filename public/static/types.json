@@ -1,0 +1,173 @@
+[
+  {
+    "name": "normal",
+    "colors": {
+      "foreground": "#ebebeb",
+      "background": "#7a7a7a",
+      "typefont": "dark"
+    },
+    "icon": "https://static.wikia.nocookie.net/pokemongo/images/f/fb/Normal.png/revision/latest/scale-to-width-down/64?cb=20161013132914"
+  },
+  {
+    "name": "fighting",
+    "colors": {
+      "foreground": "#f2545b",
+      "background": "#a93f55",
+      "typefont": "light"
+    },
+    "icon": "https://static.wikia.nocookie.net/pokemongo/images/3/30/Fighting.png/revision/latest/scale-to-width-down/64?cb=20161013132827"
+  },
+  {
+    "name": "flying",
+    "colors": {
+      "foreground": "#d7e3fc",
+      "background": "#b6ccfe",
+      "typefont": "dark"
+    },
+    "icon": "https://static.wikia.nocookie.net/pokemongo/images/7/7f/Flying.png/revision/latest/scale-to-width-down/64?cb=20161013132839"
+  },
+  {
+    "name": "poison",
+    "colors": {
+      "foreground": "#f631fb",
+      "background": "#a709fb",
+      "typefont": "dark"
+    },
+    "icon": "https://static.wikia.nocookie.net/pokemongo/images/0/05/Poison.png/revision/latest/scale-to-width-down/64?cb=20161013133014"
+  },
+  {
+    "name": "ground",
+    "colors": {
+      "foreground": "#f5cd95",
+      "background": "#edaf57",
+      "typefont": "dark"
+    },
+    "icon": "https://static.wikia.nocookie.net/pokemongo/images/8/8f/Ground.png/revision/latest/scale-to-width-down/64?cb=20161013132902"
+  },
+  {
+    "name": "rock",
+    "colors": {
+      "foreground": "#a9714b",
+      "background": "#6b5237",
+      "typefont": "dark"
+    },
+    "icon": "https://static.wikia.nocookie.net/pokemongo/images/0/0b/Rock.png/revision/latest/scale-to-width-down/64?cb=20161013133022"
+  },
+  {
+    "name": "bug",
+    "colors": {
+      "foreground": "#ffff3f",
+      "background": "#d4d700",
+      "typefont": "dark"
+    },
+    "icon": "https://static.wikia.nocookie.net/pokemongo/images/7/7d/Bug.png/revision/latest/scale-to-width-down/64?cb=20161013132753"
+  },
+  {
+    "name": "ghost",
+    "colors": {
+      "foreground": "#848fa5",
+      "background": "#53515c",
+      "typefont": "dark"
+    },
+    "icon": "https://static.wikia.nocookie.net/pokemongo/images/a/ab/Ghost.png/revision/latest/scale-to-width-down/64?cb=20161013132847"
+  },
+  {
+    "name": "steel",
+    "colors": {
+      "foreground": "#c2c2c3",
+      "background": "#8d8c8c",
+      "typefont": "dark"
+    },
+    "icon": "https://static.wikia.nocookie.net/pokemongo/images/c/c9/Steel.png/revision/latest/scale-to-width-down/64?cb=20161013133029"
+  },
+  {
+    "name": "fire",
+    "colors": {
+      "foreground": "#e85d04",
+      "background": "#d00000",
+      "typefont": "dark"
+    },
+    "icon": "https://static.wikia.nocookie.net/pokemongo/images/3/30/Fire.png/revision/latest/scale-to-width-down/64?cb=20161013132833"
+  },
+  {
+    "name": "water",
+    "colors": {
+      "foreground": "#0077b6",
+      "background": "#023e8a",
+      "typefont": "light"
+    },
+    "icon": "https://static.wikia.nocookie.net/pokemongo/images/9/9d/Water.png/revision/latest/scale-to-width-down/64?cb=20161013133222"
+  },
+  {
+    "name": "grass",
+    "colors": {
+      "foreground": "#40916c",
+      "background": "#1b4332",
+      "typefont": "dark"
+    },
+    "icon": "https://static.wikia.nocookie.net/pokemongo/images/c/c5/Grass.png/revision/latest/scale-to-width-down/64?cb=20161013132855"
+  },
+  {
+    "name": "electric",
+    "colors": {
+      "foreground": "#ffea00",
+      "background": "#ffd000",
+      "typefont": "dark"
+    },
+    "icon": "https://static.wikia.nocookie.net/pokemongo/images/2/2f/Electric.png/revision/latest/scale-to-width-down/64?cb=20161013132813"
+  },
+  {
+    "name": "psychic",
+    "colors": {
+      "foreground": "#bd94b4",
+      "background": "#8b6283",
+      "typefont": "dark"
+    },
+    "icon": "https://static.wikia.nocookie.net/pokemongo/images/2/21/Psychic.png/revision/latest/scale-to-width-down/64?cb=20161013133006"
+  },
+  {
+    "name": "ice",
+    "colors": {
+      "foreground": "#00fff2",
+      "background": "#00e8fc",
+      "typefont": "dark"
+    },
+    "icon": "https://static.wikia.nocookie.net/pokemongo/images/7/77/Ice.png/revision/latest/scale-to-width-down/64?cb=20161013132908"
+  },
+  {
+    "name": "dragon",
+    "colors": {
+      "foreground": "#d3548c",
+      "background": "#602f5a",
+      "typefont": "dark"
+    },
+    "icon": "https://static.wikia.nocookie.net/pokemongo/images/c/c7/Dragon.png/revision/latest/scale-to-width-down/64?cb=20161013132807"
+  },
+  {
+    "name": "dark",
+    "colors": {
+      "foreground": "#3a506b",
+      "background": "#0b132b",
+      "typefont": "light"
+    },
+    "icon": "https://static.wikia.nocookie.net/pokemongo/images/0/0e/Dark.png/revision/latest/scale-to-width-down/64?cb=20161013132800"
+  },
+  {
+    "name": "fairy",
+    "colors": {
+      "foreground": "#b298dc",
+      "background": "#a663cc",
+      "typefont": "dark"
+    },
+    "icon": "https://static.wikia.nocookie.net/pokemongo/images/4/43/Fairy.png/revision/latest/scale-to-width-down/64?cb=20161013132820"
+  },
+  {
+    "name": "unknown",
+    "colors": {
+      "foreground": "#e9ecef",
+      "background": "#ced4da",
+      "typefont": "dark"
+    },
+    "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Question_mark_%28black%29.svg/800px-Question_mark_%28black%29.svg.png"
+  }
+]
