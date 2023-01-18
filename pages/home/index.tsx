@@ -28,7 +28,6 @@ interface HomeModel {
 }
 
 export default function Home({ apiDashboardData }: HomeModel) {
-  console.log(apiDashboardData);
   return (
     <div className={classNames({ [roboto.className]: true })}>
       Welcome to pokemon dash
