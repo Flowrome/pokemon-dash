@@ -4,6 +4,7 @@ Accademy workshop NextJS
   - JSX, React
   - Server Side Rendering - Next.js renders your pages on the server, providing better performance and improved SEO.
   - File Based Page Routing - Next.js uses file-based routing, which means you can create pages simply by creating a file in the pages directory.
+    - Specific and global components
   - API Routes - Next.js provides an easy way to create API routes, allowing you to build powerful APIs which can be consumed by client-side applications.
 - Parliamo di turbopack vs webpack - 5min
 - Sessione live coding - 15min/20min 
