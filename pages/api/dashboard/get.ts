@@ -21,6 +21,7 @@ export interface ModelResponseGet {
     stats: { base: number; effort: number; name: string }[];
     types: string[];
   }[];
+  count: number;
   page: number;
   limit: number;
 }
@@ -32,7 +33,7 @@ export const handlerGet = async (
   const offset = page * limit;
   let { results }: { results: { name: string; url: string }[] } = (await fetch(
     `${process.env.BASEURL_POKEAPI}/pokemon${objectToQuery({ offset, limit })}`
-  )) as any;
+  ).then((res) => res.json())) as any;
   if (q) {
     results = results.filter(({ name }) => name.indexOf(q) > -1);
   }
@@ -51,7 +52,16 @@ export const handlerGet = async (
         },
         stats,
         types,
-      } = (await fetch(`${url}`)) as any;
+      } = (await fetch(`${url}`).then((res) => res.json())) as any;
+      console.log({
+        name,
+        height,
+        weight,
+        id,
+        sprites: { back, backShiny, front, frontShiny },
+        stats,
+        types,
+      });
       return {
         name,
         height,
@@ -73,6 +83,7 @@ export const handlerGet = async (
     })
   );
   return {
+    count: newResults.length,
     results: newResults,
     page,
     limit,
