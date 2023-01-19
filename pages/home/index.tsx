@@ -3,6 +3,8 @@ import { Roboto } from "@next/font/google";
 import { GetServerSidePropsContext } from "next";
 
 import Pokedex from "./../../components/pokedex/pokedex";
+import { ModelResponseGet as ModelDashboard } from "../api/dashboard/get";
+// import { ModelResponseGet as ModelDashboard } from "../api/dashboard/get";
 
 const roboto = Roboto({
   weight: ["100", "300", "400", "500", "700", "900"],
@@ -25,15 +27,14 @@ export const getServerSideProps = async ({
 };
 
 interface HomeModel {
-  apiDashboardData: any[];
+  apiDashboardData: ModelDashboard;
 }
 
 export default function Home({ apiDashboardData }: HomeModel) {
   console.log(apiDashboardData);
   return (
     <div className={classNames({ [roboto.className]: true })}>
-      Welcome to pokemon dash
-      <Pokedex></Pokedex>
+      <Pokedex results={apiDashboardData.results} />
     </div>
   );
 }
