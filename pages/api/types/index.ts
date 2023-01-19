@@ -7,7 +7,7 @@ const handler = async (
 ) => {
   switch (req.method) {
     case "GET":
-      res.status(200).json({ ...(await handlerGet(req)) });
+      res.status(200).json({ ...(await handlerGet(req, res)) });
       break;
     default:
       res.status(405);

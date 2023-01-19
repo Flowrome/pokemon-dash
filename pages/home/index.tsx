@@ -15,10 +15,9 @@ export const getServerSideProps = async ({
   req,
 }: GetServerSidePropsContext) => {
   const baseUrl = (req.headers.referer || "").split("/").splice(0, 3).join("/");
-  console.log(baseUrl);
-  const data = await fetch(`${baseUrl}/api/dashboard`).then((res) =>
-    res.json()
-  );
+  const data = await fetch(
+    `${baseUrl || process.env.BASEURL_API}/api/dashboard`
+  ).then((res) => res.json());
   return {
     props: {
       apiDashboardData: data,
@@ -31,7 +30,6 @@ interface HomeModel {
 }
 
 export default function Home({ apiDashboardData }: HomeModel) {
-  console.log(apiDashboardData);
   return (
     <div className={classNames({ [roboto.className]: true })}>
       <Pokedex results={apiDashboardData.results} />
