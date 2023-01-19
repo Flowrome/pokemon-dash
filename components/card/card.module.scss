@@ -1,14 +1,18 @@
+.card > * {
+    margin: 5px 0;
+}
+
 .card {
     font-family: "Flexo-Demi",arial,sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     border: 1px solid #FFFFFF;
     border-radius: 20px;
     cursor: pointer;
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
     margin: 10px;
     padding: 10px;
 

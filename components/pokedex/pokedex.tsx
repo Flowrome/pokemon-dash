@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ModelResponseGet } from '../../pages/api/dashboard/get';
+import { ModelResponseGet } from '../../pages/api/dashboard/methods/get';
 import Card from '../card/card';
 import styles from './pokedex.module.scss';
 
