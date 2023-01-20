@@ -4,11 +4,13 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        background-color: #FFFFFF;
+        background-image: url("https://assets.pokemon.com/static2/_ui/img/chrome/container_bg.png");
     }
 
     &__searchbar {
         border-radius: 20px;
-        border: 1px solid black;
+        border: 1px solid #F2F2F2;
         height: 40px;
         width: 400px;
         color: #000000;
