@@ -1,0 +1,59 @@
+{
+  "result": {
+    "id": 1,
+    "abilities": ["overgrow", "chlorophyll"],
+    "height": 7,
+    "weight": 69,
+    "sprites": {
+      "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/1.png",
+      "backShiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/1.png",
+      "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+      "frontShiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/1.png"
+    },
+    "stats": [
+      { "name": "hp", "base_stat": 45 },
+      { "name": "attack", "base_stat": 49 },
+      { "name": "defense", "base_stat": 49 },
+      { "name": "special-attack", "base_stat": 65 },
+      { "name": "special-defense", "base_stat": 65 },
+      { "name": "speed", "base_stat": 45 }
+    ],
+    "types": ["grass", "poison"],
+    "name": "bulbasaur",
+    "evolutions": [
+      {
+        "name": "bulbasaur",
+        "sprites": {
+          "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/1.png",
+          "backShiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/1.png",
+          "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+          "frontShiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/1.png"
+        },
+        "types": ["grass", "poison"],
+        "id": 1
+      },
+      {
+        "name": "ivysaur",
+        "sprites": {
+          "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/2.png",
+          "backShiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/2.png",
+          "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
+          "frontShiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/2.png"
+        },
+        "types": ["grass", "poison"],
+        "id": 2
+      },
+      {
+        "name": "venusaur",
+        "sprites": {
+          "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/3.png",
+          "backShiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/3.png",
+          "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
+          "frontShiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/3.png"
+        },
+        "types": ["grass", "poison"],
+        "id": 3
+      }
+    ]
+  }
+}
