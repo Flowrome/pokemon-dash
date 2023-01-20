@@ -64,7 +64,7 @@ export const handlerGet = async (
   if (process.env.NODE_ENV === "development") {
     return JSON.parse(
       await readFile(
-        join(process.cwd(), "/public/static/mocks/detail.json"),
+        join(process.cwd(), `/public/static/mocks/detail-${id}.json`),
         "utf-8"
       )
     );
@@ -72,9 +72,12 @@ export const handlerGet = async (
   let { abilities, height, weight, sprites, stats, types, name } = (await fetch(
     `${process.env.BASEURL_POKEAPI}/pokemon/${id}`
   ).then((res) => res.json())) as any;
-  let { chain } = (await fetch(
-    `${process.env.BASEURL_POKEAPI}/evolution-chain/${id}`
-  ).then((res) => res.json())) as any;
+  let {
+    evolution_chain: { url },
+  } = (await fetch(`${process.env.BASEURL_POKEAPI}/pokemon-species/${id}`).then(
+    (res) => res.json()
+  )) as any;
+  let { chain } = (await fetch(url).then((res) => res.json())) as any;
   let evolutions = [];
   if (chain?.evolves_to.length) {
     evolutions = await parseEvolution(chain, []);

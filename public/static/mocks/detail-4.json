@@ -1,0 +1,59 @@
+{
+  "result": {
+    "id": 4,
+    "abilities": ["blaze", "solar-power"],
+    "height": 6,
+    "weight": 85,
+    "sprites": {
+      "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/4.png",
+      "backShiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/4.png",
+      "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+      "frontShiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/4.png"
+    },
+    "stats": [
+      { "name": "hp", "base_stat": 39 },
+      { "name": "attack", "base_stat": 52 },
+      { "name": "defense", "base_stat": 43 },
+      { "name": "special-attack", "base_stat": 60 },
+      { "name": "special-defense", "base_stat": 50 },
+      { "name": "speed", "base_stat": 65 }
+    ],
+    "types": ["fire"],
+    "name": "charmander",
+    "evolutions": [
+      {
+        "name": "charmander",
+        "sprites": {
+          "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/4.png",
+          "backShiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/4.png",
+          "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+          "frontShiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/4.png"
+        },
+        "types": ["fire"],
+        "id": 4
+      },
+      {
+        "name": "charmeleon",
+        "sprites": {
+          "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/5.png",
+          "backShiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/5.png",
+          "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
+          "frontShiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/5.png"
+        },
+        "types": ["fire"],
+        "id": 5
+      },
+      {
+        "name": "charizard",
+        "sprites": {
+          "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/6.png",
+          "backShiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/6.png",
+          "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
+          "frontShiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/6.png"
+        },
+        "types": ["fire", "flying"],
+        "id": 6
+      }
+    ]
+  }
+}

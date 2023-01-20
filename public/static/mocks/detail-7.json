@@ -1,0 +1,59 @@
+{
+  "result": {
+    "id": 7,
+    "abilities": ["torrent", "rain-dish"],
+    "height": 5,
+    "weight": 90,
+    "sprites": {
+      "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/7.png",
+      "backShiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/7.png",
+      "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png",
+      "frontShiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/7.png"
+    },
+    "stats": [
+      { "name": "hp", "base_stat": 44 },
+      { "name": "attack", "base_stat": 48 },
+      { "name": "defense", "base_stat": 65 },
+      { "name": "special-attack", "base_stat": 50 },
+      { "name": "special-defense", "base_stat": 64 },
+      { "name": "speed", "base_stat": 43 }
+    ],
+    "types": ["water"],
+    "name": "squirtle",
+    "evolutions": [
+      {
+        "name": "squirtle",
+        "sprites": {
+          "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/7.png",
+          "backShiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/7.png",
+          "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png",
+          "frontShiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/7.png"
+        },
+        "types": ["water"],
+        "id": 7
+      },
+      {
+        "name": "wartortle",
+        "sprites": {
+          "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/8.png",
+          "backShiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/8.png",
+          "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png",
+          "frontShiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/8.png"
+        },
+        "types": ["water"],
+        "id": 8
+      },
+      {
+        "name": "blastoise",
+        "sprites": {
+          "back": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/9.png",
+          "backShiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/9.png",
+          "front": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png",
+          "frontShiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/9.png"
+        },
+        "types": ["water"],
+        "id": 9
+      }
+    ]
+  }
+}
