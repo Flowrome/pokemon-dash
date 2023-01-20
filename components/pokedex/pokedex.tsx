@@ -19,3 +19,4 @@ const Pokedex = ({results}: any) => {
 }
 
 export default Pokedex;
+
