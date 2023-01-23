@@ -3,17 +3,16 @@ import styles from './pokedex.module.scss';
 
 const Pokedex = ({results}: any) => {
     return(
-        <div className={styles.pokedex__container}>
+        <div className={`${styles.pokedex__container}`}>
             <div className={styles.pokedex__image}></div>
 
             <input type="text" className={styles.pokedex__searchbar} placeholder="Pokémon" />
 
-            <div className={styles.pokedex__pokelist}>
+            <div className={`${styles.pokedex__pokelist} col-8 flex-wrap`}>
                 {results.map((res: any)  => 
                     <Card infos={ res }/>
                 )}
             </div>
-
         </div>
     );
 }

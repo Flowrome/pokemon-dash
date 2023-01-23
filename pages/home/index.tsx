@@ -5,6 +5,7 @@ import { GetServerSidePropsContext } from "next";
 import Pokedex from "./../../components/pokedex/pokedex";
 import { ModelResponseGet as ModelDashboard } from "../api/dashboard/methods/get";
 // import { ModelResponseGet as ModelDashboard } from "../api/dashboard/get";
+import 'bootstrap/dist/css/bootstrap.css';
 
 const roboto = Roboto({
   weight: ["100", "300", "400", "500", "700", "900"],
