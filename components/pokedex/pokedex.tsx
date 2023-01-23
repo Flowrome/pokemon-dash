@@ -1,7 +1,7 @@
 import Card from '../card/card';
 import styles from './pokedex.module.scss';
 
-const Pokedex = ({results}: any) => {
+const Pokedex = ({results, types}: any) => {
     return(
         <div className={`${styles.pokedex__container}`}>
             <div className={styles.pokedex__image}></div>
@@ -10,7 +10,7 @@ const Pokedex = ({results}: any) => {
 
             <div className={`${styles.pokedex__pokelist} col-8 flex-wrap`}>
                 {results.map((res: any)  => 
-                    <Card infos={ res }/>
+                    <Card infos={ res } types={types}/>
                 )}
             </div>
         </div>
