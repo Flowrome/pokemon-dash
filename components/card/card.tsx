@@ -1,6 +1,13 @@
 import { useEffect } from 'react';
 import styles from './card.module.scss';
 
+const blackListTypes = [
+    'normal',
+    'bug',
+    'electric',
+    'flying'
+]
+
 const Card = ({ infos, types }) => {
     const setColor = (type: string) => {
         const typeColor = types.results.find(item => {
@@ -11,7 +18,7 @@ const Card = ({ infos, types }) => {
 
         return {
             backgroundColor: typeColor.colors.foreground || '#FFFFFF',
-            color: (type !== 'normal' && type !== 'bug') ? '#FFFFFF' : '#000000'
+            color: !blackListTypes.includes(type) ? '#FFFFFF' : '#000000'
         };
     }
 
