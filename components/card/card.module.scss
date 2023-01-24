@@ -16,10 +16,10 @@
     height: 180px;
     margin: 10px;
     padding: 10px;
+    transition: transform 250ms;
 
     &:hover {
-        animation: bounce 1.5s infinite; //other browsers
-        -webkit-animation: bounce 1.5s infinite; //webkit browsers
+        transform: translateY(-10px);
         background-color: #777777;
         color: #ffffff;
     }
