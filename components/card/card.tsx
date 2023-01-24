@@ -11,7 +11,7 @@ const Card = ({ infos, types }) => {
 
         return {
             backgroundColor: typeColor.colors.foreground || '#FFFFFF',
-            border: `1px solid ${typeColor.colors.background}` || '#000000',
+            color: (type !== 'normal' && type !== 'bug') ? '#FFFFFF' : '#000000'
         };
     }
 
