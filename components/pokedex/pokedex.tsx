@@ -9,8 +9,8 @@ const Pokedex = ({results, types}: any) => {
             <input type="text" className={styles.pokedex__searchbar} placeholder="Pokémon" />
 
             <div className={`${styles.pokedex__pokelist} col-8 d-flex justify-content-center flex-wrap`}>
-                {results.map((res: any)  => 
-                    <Card infos={ res } types={types}/>
+                {results.map((res: any, index: number)  => 
+                    <Card key={index} infos={ res } types={types}/>
                 )}
             </div>
         </div>

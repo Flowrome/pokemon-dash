@@ -8,9 +8,9 @@ const blackListTypes = [
     'flying'
 ]
 
-const Card = ({ infos, types }) => {
+const Card = ({ infos, types }: any) => {
     const setColor = (type: string) => {
-        const typeColor = types.results.find(item => {
+        const typeColor = types.results.find((item: any) => {
             if(item.name === type) {
                 return item;
             }
@@ -34,7 +34,7 @@ const Card = ({ infos, types }) => {
 
             <div className={styles['card__types-list']}>
                 {infos.types.map((type: string) => 
-                    <span style={setColor(type)} className={styles['card__types-list--type']}>{type}</span>
+                    <span key={type} style={setColor(type)} className={styles['card__types-list--type']}>{type}</span>
                 )}
             </div>
         </div>
