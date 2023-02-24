@@ -28,7 +28,7 @@ export interface ModelResponseGet {
 export const handlerGet = async (
   req: NextApiRequest
 ): Promise<ModelResponseGet> => {
-  const { q, page = 0, limit = 100 }: ModelRequestGet = req.query;
+  const { q, page = 0, limit = 151 }: ModelRequestGet = req.query;
   const offset = page * limit;
   // if (process.env.NODE_ENV === "development") {
   //   return JSON.parse(
