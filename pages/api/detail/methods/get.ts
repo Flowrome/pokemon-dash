@@ -61,14 +61,14 @@ export const handlerGet = async (
   req: NextApiRequest
 ): Promise<ModelResponseGet> => {
   const { id } = req.query;
-  if (process.env.NODE_ENV === "development") {
-    return JSON.parse(
-      await readFile(
-        join(process.cwd(), `/public/static/mocks/detail-${id}.json`),
-        "utf-8"
-      )
-    );
-  }
+  // if (process.env.NODE_ENV === "development") {
+  //   return JSON.parse(
+  //     await readFile(
+  //       join(process.cwd(), `/public/static/mocks/detail-${id}.json`),
+  //       "utf-8"
+  //     )
+  //   );
+  // }
   let { abilities, height, weight, sprites, stats, types, name } = (await fetch(
     `${process.env.BASEURL_POKEAPI}/pokemon/${id}`
   ).then((res) => res.json())) as any;

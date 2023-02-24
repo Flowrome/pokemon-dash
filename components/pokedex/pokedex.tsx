@@ -6,7 +6,9 @@ const Pokedex = ({results, types}: any) => {
         <div className={`${styles.pokedex__container}`}>
             <div className={styles.pokedex__image}></div>
 
-            <input type="text" className={styles.pokedex__searchbar} placeholder="Pokémon" />
+            <input type="text" className={styles.pokedex__searchbar} onKeyUp={() => {
+                
+            }} placeholder="Pokémon" />
 
             <div className={`${styles.pokedex__pokelist} col-8 d-flex justify-content-center flex-wrap`}>
                 {results.map((res: any, index: number)  => 
